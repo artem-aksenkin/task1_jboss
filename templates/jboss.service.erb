@@ -1,0 +1,8 @@
+[Unit]
+Description=Wildfly
+After=network.target
+[Service]
+Type=simple
+ExecStart=/opt/wildfly/bin/standalone.sh -b 192.168.56.222
+[Install]
+WantedBy=multi-user.target
